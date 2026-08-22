@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-heart">❤️</div>
+
+            <p>A little surprise is loading...</p>
+
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts-bg">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+    </div>
+    <!-- Welcome Screen -->
+    <section class="welcome-screen">
+
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="sparkle sparkle-2">✧</div>
+        <div class="sparkle sparkle-3">✦</div>
+
+        <div class="hearts">
+            <span>♡</span>
+            <span>♥</span>
+            <span>♡</span>
+            <span>♥</span>
+        </div>
+
+        <div class="welcome-content">
+
+            <p class="small-title">✨ A LITTLE SURPRISE FOR YOU ✨</p>
+
+            <h1>
+                Hey, Kashish! 
+                <span>❤️</span>
+            </h1>
+
+            <p class="subtitle">
+                Someone made something special<br>
+                just for you...
+            </p>
+
+            <button id="openButton">
+                🎁 Open Your Surprise
+            </button>
+
+            <p class="hint">
+                Tap the button... 👀
+            </p>
+
+        </div>
+
+    </section>
+    <!-- Balloon Game -->
+<section class="balloon-screen" id="balloonScreen">
+
+    <div class="game-content">
+
+        <p class="game-label">🎈 FIRST CHALLENGE 🎈</p>
+
+        <h2>Pop The Balloons!</h2>
+
+        <p class="game-instruction">
+            Pop all the balloons to unlock your next surprise. 👀
+        </p>
+
+        <div class="balloon-area" id="balloonArea">
+
+            <button class="balloon balloon-1">🎈</button>
+
+            <button class="balloon balloon-2">🎈</button>
+
+            <button class="balloon balloon-3">🎈</button>
+
+            <button class="balloon balloon-4">🎈</button>
+
+            <button class="balloon balloon-5">🎈</button>
+
+            <button class="balloon balloon-6">🎈</button>
+
+        </div>
+
+        <p class="balloon-counter">
+            Balloons left: <span id="balloonCount">6</span>
+        </p>
+        <div class="balloon-success" id="balloonSuccess">
+
+    <div class="success-icon">✨</div>
+
+    <h3>You Did It! 🎉</h3>
+
+    <p>
+        You popped all the balloons!<br>
+        But your birthday surprise isn't over yet... 👀
+    </p>
+
+    <button id="continueButton">
+        Continue → 🎂
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+<!-- =========================
+     CAKE GAME
+========================= -->
+
+<section class="cake-screen" id="cakeScreen">
+
+    <div class="cake-content">
+
+        <p class="cake-label">
+            🎂 SECOND CHALLENGE 🎂
+        </p>
+
+        <h2>
+            Make A Wish! ✨
+        </h2>
+
+        <p class="cake-instruction">
+            Your birthday cake is waiting for you...
+            <br>
+            Now blow the candle! 💨
+        </p>
+
+
+        <!-- Cake -->
+
+        <div class="cake-container">
+
+            <!-- Candle -->
+
+            <div class="candle">
+
+                <div class="flame" id="flame">
+                    🔥
+                </div>
+
+                <div class="candle-stick">
+                </div>
+
+            </div>
+
+
+            <!-- Cake Body -->
+
+            <div class="cake">
+
+                <div class="icing">
+                </div>
+
+                <div class="cake-layer">
+                </div>
+
+                <div class="cake-bottom">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Blow Button -->
+
+        <button id="blowButton">
+
+            💨 Blow The Candle
+
+        </button>
+
+
+        <p class="blow-hint">
+            Take a breath... and make a wish! 🥹
+        </p>
+
+
+        <!-- Hidden Success Message -->
+
+        <div class="cake-success" id="cakeSuccess">
+
+            <div class="success-stars">
+                ✨ 🎉 ✨
+            </div>
+
+            <h3>
+                Wish Made! 💖
+            </h3>
+
+            <p>
+                May all your wishes come true. ❤️
+            </p>
+
+            <button id="cakeContinueButton">
+                Continue → 💌
+            </button>
+
+        </div>
+
+    </div>
+
+</section> 
+</section>
+
+
+<!-- LETTER SCREEN -->
+
+<section class="letter-screen" id="letterScreen">
+
+    <div class="letter-content">
+
+        <div class="letter-decoration">
+            💌
+        </div>
+
+        <p class="letter-label">
+            A LITTLE MESSAGE FOR YOU
+        </p>
+
+        <h2>
+            Dear Kashish, ❤️
+        </h2>
+
+        <div class="letter-paper">
+
+            <p id="letterText"></p>
+
+            <p class="letter-signature">
+    With lots of love,<br>
+    <span>Archu ❤️</span>
+    </p>
+
+        </div>
+
+        <button id="memoryButton">
+            Continue → 📸
+        </button>
+
+    </div>
+
+</section>
+ 
+<!-- =========================
+     MEMORY GALLERY
+========================= -->
+
+<section class="memory-screen" id="memoryScreen">
+
+    <div class="memory-content">
+
+        <div class="memory-top-icon">
+            📸
+        </div>
+
+        <p class="memory-label">
+            OUR LITTLE STORY
+        </p>
+
+        <h2>
+            One Year, So Many Memories ❤️
+        </h2>
+
+        <p class="memory-intro">
+            From a random picture to becoming best friends...
+            here's a little piece of our story. 🫶
+        </p>
+
+
+        <!-- PHOTO GRID -->
+
+        <div class="photo-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/first-photo.jpeg"
+                        alt="Our first photo"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 01
+                    </span>
+
+                    <h3>
+                        The Random Beginning 📸
+                    </h3>
+
+                    <p>
+                        We were just classmates on that last day
+                        of graduation. We had no idea that this
+                        random picture would become the beginning
+                        of something special. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/amity.jpeg"
+                        alt="Amity memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 02
+                    </span>
+
+                    <h3>
+                        And Then Came Amity 🏫
+                    </h3>
+
+                    <p>
+                        Then came the Amity registration days...
+                        and somehow you went from being just a
+                        classmate to becoming my best friend. 🫶
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/funny-memory.jpeg"
+                        alt="Funny memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 03
+                    </span>
+
+                    <h3>
+                        One Gets Hungry... Both Eat 😂
+                    </h3>
+
+                    <p>
+                        Bhukh ek ko lagti hai,
+                        khate dono hain. 😂❤️
+                        Market mein kaam ek ko hota hai,
+                        jaate dono hain.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/memory-1.jpeg"
+                        alt="Best friend memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 04
+                    </span>
+
+                    <h3>
+                        Bluetooth Connected Successfully 🔵😂
+                    </h3>
+
+                    <p>
+                        One look at a third person and somehow
+                        you already know exactly what I am
+                        thinking. No explanation needed. 😂
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/memory-2.jpeg"
+                        alt="Best friends"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 05
+                    </span>
+
+                    <h3>
+                        Same Brain, Same Words 😂❤️
+                    </h3>
+
+                    <p>
+                        When we say the exact same thing at
+                        exactly the same time...
+                        our brains are definitely connected. 😂
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 6 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/memory-3.jpeg"
+                        alt="Best friend memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 06
+                    </span>
+
+                    <h3>
+                        My Favourite Pagal ❤️
+                    </h3>
+
+                    <p>
+                        One year of friendship, countless
+                        memories and hopefully a lifetime
+                        more to come. 🫶
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL SECTION -->
+
+        <div class="memory-ending">
+
+            <div class="ending-heart">
+                ❤️
+            </div>
+
+            <h3>
+                And this is just the beginning...
+            </h3>
+
+            <p>
+                One year down, and hopefully a lifetime
+                of crazy memories to go. 🫶
+            </p>
+
+            <button id="finalBirthdayButton">
+                One Last Surprise → 🎁
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FINAL BIRTHDAY SCREEN
+========================= -->
+
+<section class="final-screen" id="finalScreen">
+
+    <div class="final-content">
+
+        <div class="final-sparkles">
+            ✨ 🎉 ✨
+        </div>
+
+        <p class="final-small-title">
+            THE SURPRISE ISN'T OVER YET
+        </p>
+
+        <h1>
+            Happy Birthday,
+            <span>Kashish!</span> 🎂❤️
+        </h1>
+
+        <div class="final-cake">
+            🎂
+        </div>
+
+        <p class="final-message">
+
+            Hey Pagal, ❤️
+
+            <br><br>
+
+            If you've reached this page,
+            congratulations... you survived all my
+            little surprises. 😂
+
+            <br><br>
+
+            But honestly, the biggest surprise is
+            how a random picture with a classmate
+            turned into one of the most beautiful
+            friendships of my life.
+
+            <br><br>
+
+            From sharing food when only one of us
+            is hungry, to our Bluetooth minds
+            connecting without saying a word...
+
+            <br><br>
+
+            I hope we keep collecting stupid,
+            crazy and beautiful memories together
+            for a very, very long time. 🫶
+
+        </p>
+
+
+        <div class="final-wish">
+
+            May you always stay happy,
+            keep singing,
+            keep smiling,
+
+            <br>
+
+            and keep being my favourite pagal. 😂❤️
+
+        </div>
+
+
+        <div class="final-signature">
+
+            With lots of love,
+
+            <strong>
+                Archu ❤️
+            </strong>
+
+        </div>
+
+
+        <button
+            id="replayButton"
+            class="replay-button"
+        >
+            Replay Our Story ↻
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
